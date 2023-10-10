@@ -141,10 +141,11 @@ WHERE Students.Student_ID = Appointments.Student_ID;
 
 USE SwanseaRenting
 CREATE VIEW SystemEfficacy2 AS
-SELECT Left(First_Name, 1), Last_Name, COUNT(*) AS total
+SELECT Left(First_Name, 1), MAX(Last_Name) AS Last_Name, COUNT(*) AS total
 FROM SystemEfficacy
 WHERE Decision = 'No'
-GROUP BY First_Name;
+GROUP BY Left(First_Name, 1)
+ORDER BY First_Name;
 
 SELECT * 
 FROM SystemEfficacy2;
