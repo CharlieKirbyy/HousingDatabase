@@ -1,7 +1,7 @@
 <h1>Housing Database</h1>
 
 <h2>Description</h2>
-A program that creates a housing database for Swansea University students. It uses queries to find suitable appointment times and houses depening on the student's needs.
+A program that creates a housing database for Swansea University students. It uses queries to find suitable appointment times and houses depending on the student's needs.
 <br />
 
 
